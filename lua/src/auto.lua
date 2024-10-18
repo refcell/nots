@@ -34,12 +34,12 @@ api.nvim_create_autocmd("Filetype", {
 -- Autocommand to check the color scheme on startup
 vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()
-    require("config.utils").check_and_update_color_scheme()
+    require("utils.utils").check_and_update_color_scheme()
   end,
 })
 
 vim.fn.timer_start(10000, function()
-  require("config.utils").check_and_update_color_scheme()
+  require("utils.utils").check_and_update_color_scheme()
 end, { ["repeat"] = -1 })
 
 -- Highlight on yank

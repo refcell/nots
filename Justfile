@@ -8,16 +8,14 @@ default:
 # Backs up ~/.config/nvim in a ~/.config/nvim.backup directory
 backup:
   @rm -rf ~/.config/nvim.backup
-  @cp -R ~/.config/nvim ~/.config/nvim.backup
+  @mv ~/.config/nvim ~/.config/nvim.backup
 
 # Installs this configuration.
-install:
-  @rm -rf ~/.config/nvim
-  @mkdir -p ~/.config/nvim
-  @cp -R ./* ~/.config/nvim/
+install: backup
+  @mv . ~/.config/nvim
 
-# Restore the backup, moving the current ~/.config/nvim to ~/.config/nvim.broken
+# Restore the backup, moving the current ~/.config/nvim to ~/.config/nvim.nots
 restore:
-  @rm -rf ~/.config/nvim.broken
-  @mv ~/.config/nvim ~/.config/nvim.broken
+  @rm -rf ~/.config/nvim.nots
+  @mv ~/.config/nvim ~/.config/nvim.nots
   @mv ~/.config/nvim.backup ~/.config/nvim
