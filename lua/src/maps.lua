@@ -85,7 +85,7 @@ map("n", "<C-n>", ":w %:h/", opts)
 -- delete backward
 -- w{number}db
 
-map("n", "<C-P>", ':lua require("config.utils").toggle_go_test()<CR>', opts)
+map("n", "<C-P>", ':lua require("utils.utils").toggle_go_test()<CR>', opts)
 
 vim.cmd([[:amenu 10.100 mousemenu.Goto\ Definition <cmd>Telescope lsp_definitions<CR>]])
 vim.cmd([[:amenu 10.110 mousemenu.References <cmd>Telescope lsp_references<CR>]])
