@@ -1,4 +1,4 @@
-### https://github.com/refcell/nots/labels/nots • https://github.com/refcell/nots/labels/nots https://github.com/refcell/nots/labels/catppuccin
+### https://github.com/refcell/nots/labels/nots • https://github.com/refcell/nots/labels/neovim https://github.com/refcell/nots/labels/catppuccin
 
 [@refcell](https://github.com/refcell)'s neovim configuration.
 
