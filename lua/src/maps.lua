@@ -5,6 +5,10 @@ local map = vim.keymap.set
 -- map("n", require("avante").toggle())
 map("n", "<leader>z", ':lua require("avante").toggle()<CR>', opts)
 
+-- Indentation
+map("v", "<S-Tab>", "<gv", { silent = true, desc = "Unindent line" })
+map("v", "<Tab>", ">gv", { silent = true, desc = "Indent line" })
+
 -- Keep cursor centered when scrolling
 map("n", "<C-d>", "<C-d>zz", opts)
 map("n", "<C-u>", "<C-u>zz", opts)
