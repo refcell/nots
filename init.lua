@@ -1,5 +1,5 @@
-require "src.maps"
-require "src.opts"
-require "src.auto"
-require "src.abbr"
-require "src.lazy"
+require("src.maps")
+require("src.opts")
+require("src.auto")
+require("src.abbr")
+require("src.lazy")
