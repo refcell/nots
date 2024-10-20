@@ -1,6 +1,6 @@
 return function()
     local dashboard = require("alpha.themes.dashboard")
-    local logo = require("dash.banners")["angyskull"]
+    local logo = require("dash.banners")["wojack"]
     dashboard.section.header.val = logo
     dashboard.section.buttons.val = {
       dashboard.button("f", " " .. " Find file", ":Telescope find_files <CR>"),
