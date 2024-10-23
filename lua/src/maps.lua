@@ -93,7 +93,7 @@ map("n", "<C-\\>", ":ToggleTerm direction=float<CR>", opts)
 map("n", "X", ":keeppatterns substitute/\\s*\\%#\\s*/\\r/e <bar> normal! ==^<cr>", { silent = true })
 
 -- Select all
-map("n", "<C-a>", "ggVG", opts)
+map("n", "<C-s>", "ggVG", opts)
 
 -- write file in current directory
 -- :w %:h/<new-file-name>

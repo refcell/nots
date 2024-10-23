@@ -8,6 +8,7 @@ return {
     -- add any opts here
     -- "claude" | "openai" | "azure" | "gemini" | "cohere" | "copilot" | string
     provider = "claude",
+    -- provider = "copilot",
     claude = {
       endpoint = "https://api.anthropic.com",
       model = "claude-3-5-sonnet-20240620",
@@ -16,6 +17,15 @@ return {
     },
     mappings = {
       focus = "<C-1>",
+      diff = {
+        ours = "co",
+        theirs = "ct",
+        all_theirs = "cs",
+        both = "cb",
+        cursor = "cc",
+        next = "]x",
+        prev = "[x",
+      },
     },
   },
   -- if you want to download pre-built binary, then pass source=false. Make sure to follow instruction above.

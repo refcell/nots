@@ -1,4 +1,5 @@
 return {
+  rust_analyzer = {},
   jsonls = {
     settings = {
       json = {
